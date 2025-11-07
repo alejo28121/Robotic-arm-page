@@ -1,0 +1,14 @@
+.Robo-container{
+    width: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border-radius: 6vh;
+    border: none;
+    box-shadow: -5px 5px 25px rgba(0, 0, 0, 0.3);
+}
+.Robo-img{
+    border-radius: 6vh;
+    width: 12vw;
+}

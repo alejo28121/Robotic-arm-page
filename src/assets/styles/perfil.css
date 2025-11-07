@@ -1,0 +1,137 @@
+.Main-perfil-container{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Perfil-container{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Card{
+    display: flex;
+    flex-direction: column;
+    width: 22vw;
+    height: 60vh;
+}
+.Card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 2vw;
+    background-color: #6a6a6a;
+    border-radius: 6vh;
+    box-sizing: border-box;
+    box-shadow: inset 5px 5px 10px rgba(200, 200, 200, 0.3);
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
+}
+.Front, .Back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.Front-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Back {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4vh;
+    box-sizing: border-box;
+}
+.Info-container{
+    width: 100%;
+    height: 100%;
+    gap: 3vh;
+    font-size: 2.4vh;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Card:hover .Card-inner{
+    transform: rotateY(180deg);
+}
+.circle{
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+    width: 11vh;
+    height: 2vh;
+    margin-left: 4vh;
+    margin-bottom: 2vh;
+    z-index: 100;
+}
+.Red-dot{
+    width: 2vh;
+    height: 2vh;
+    border-radius: 50%;
+    background-color: #ff605c;
+}
+
+.Yellow-dot{
+    width: 2vh;
+    height: 2vh;
+    border-radius: 50%;
+    background-color: #ffbd44;
+}
+
+.Green-dot{
+    width: 2vh;
+    height: 2vh;
+    border-radius: 50%;
+    background-color: #00ca4e;
+}
+.Photo-container, .Name-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18vw;
+}
+.Name{
+    text-align: center;
+    border-radius: 6vh;
+    padding: 1vh;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+    color: #b2b2b2;
+    width: 14vw;
+    font-size: 3vh;
+    font-weight: 600;
+}
+.Photo-frame{
+    width: 14vw;
+    height: auto;
+    overflow: hidden;
+    border-radius: 6vh;
+    border: none;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+}
+.Photo-img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6vh;
+    filter: brightness(85%);
+    border: none;
+}

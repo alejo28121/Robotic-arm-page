@@ -1,0 +1,19 @@
+.Basic-sensors-container{
+    width: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20vh;
+    box-sizing: border-box;
+}
+.Title-description{
+    font-size: 5vh;
+}
+.Text-sensors{
+    color: #d9dfea;
+    font-size: 2.5vh;
+}
+.Text-content:hover{
+    transform: scale(1.05);
+}
