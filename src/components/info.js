@@ -17,7 +17,7 @@ function BasicInfo(){
                             clearInterval(interval);
                             setLine("");
                         }
-                }, 60);
+                }, 40);
             }
             startTyping(); 
             return () => clearInterval(interval); 
